@@ -10,7 +10,7 @@ export async function analyzeIcon(
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-3.1-flash-lite-preview' });
 
   const prompt = `请分析这个图标图片，提供以下信息（以 JSON 格式返回）：
 
